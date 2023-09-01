@@ -58,7 +58,7 @@ Die m4.xlarge-Instanzen bieten höhere Leistung und Ressourcen, sind jedoch kost
 ## Kostentabelle
 
 | Instanztyp  | Stündlicher Preis ($) | Monatsstunden | Monatliche Kosten ($) |
-|-------------|------------------------|---------------|-----------------------|
-| t2.micro    | 0.0162                 | 720           | 11.664                 |
-| m4.xlarge   | 0.384                   | 720           | 276.48                   |
+|-------------|-----------------------|---------------|-----------------------|
+| t2.micro    | 0.0162                | 720           | 11.664                |
+| m4.xlarge   | 0.384                 | 720           | 276.48                |
 
