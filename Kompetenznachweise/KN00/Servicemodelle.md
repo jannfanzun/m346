@@ -25,7 +25,8 @@ Die verschiedenen Cloud-Servicemodelle bieten unterschiedliche Ebenen der Bereit
 
 ## Infrastructure as a Service (IaaS)
 
-![img](../images/iaas.png)
+<img src="../images/iaas.png" alt="img" style="max-width:50%">
+
 
 **Beschreibung:** IaaS bezieht sich auf die Miete von Infrastruktur, wie virtuellen Maschinen und Netzwerken. Die Verwaltung der Hardware und Ressourcen liegt in der Verantwortung des Anbieters. Physische Server werden durch den Anbieter verwaltet und gewartet. Betriebssystem und Software werden selbst verwaltet. 
 
@@ -37,7 +38,7 @@ Die verschiedenen Cloud-Servicemodelle bieten unterschiedliche Ebenen der Bereit
 
 ## Platform as a Service (PaaS)
 
- ![img](../images/paas.png)
+<img src="../images/paas.png" alt="img" style="max-width:50%">
 
 **Beschreibung:** PaaS stellt eine vorgefertigte Entwicklungsplattform bereit, auf der Entwickler Anwendungen erstellen und ausführen können. Die zugrunde liegende Infrastruktur und Wartung werden vom Anbieter übernommen. Laufzeitumgebung für Applikationen Wird durch Anbieter zur Verfügung gestellt. Applikation wird selbst verwaltet 
 
@@ -50,7 +51,7 @@ Die verschiedenen Cloud-Servicemodelle bieten unterschiedliche Ebenen der Bereit
 
 ## Software as a Service (SaaS)
 
- ![img](../images/soos.png)
+<img src="../images/soos.png" alt="img" style="max-width:50%">
 
 **Beschreibung:** SaaS bietet vollständige Anwendungen über das Internet an. Nutzer können die Anwendungen über den Webbrowser nutzen, ohne sich um Installation oder Wartung kümmern zu müssen. Die gesamte Applikation wird zur Verfügung gestellt.
 
@@ -62,7 +63,7 @@ Die verschiedenen Cloud-Servicemodelle bieten unterschiedliche Ebenen der Bereit
 
 ## Function as a Service (FaaS)
 
-![img](../images/faas.png)
+<img src="../images/faas.png" alt="img" style="max-width:50%">
 
 **Beschreibung:** FaaS ermöglicht die Ausführung von isolierten Funktionen oder Geschäftslogik in einer Serverless-Umgebung. Entwickler fügen ihre Funktionen hinzu, ohne sich um die zugrunde liegende Infrastruktur kümmern zu müssen. Laufzeitumgebung inkl. Middleware (z.B. HTTP Server) wird zur Verfügung gestellt. Nur die eigentliche Funktion selbst wird selbst verwaltet.
 
