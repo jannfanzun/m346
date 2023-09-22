@@ -18,6 +18,7 @@ zwei Keypairs erstellen
 - Wir haben der Instanz bevor wir sie gestartet haben, gesagt, dass nur der jann-1.pem funktioniert. Mit folgendem Query habe ich mich eingeloggt.
 
 ```ssh ubuntu@34.201.221.94 -i jann-1.pem -o ServerAliveInterval=30```
+ssh ubuntu@3.81.159.98 -i jann-2.pem -o ServerAliveInterval=30
 
 ![Alt text](../images/image-9.png)
 ![Alt text](../images/image-10.png)
