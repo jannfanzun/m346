@@ -27,8 +27,7 @@
 - SaaS: Online-Anwendungen und -Programme (z.B. Dropbox, Microsoft Office 365).
 
 ##### Test
-![img](..\images\kn02-test2.png)
-
+<img src="../images/kn02-test2.png" alt="img" style="max-width:70%">
 ### Structures of the Cloud
 
 **Strukturen der Cloud**
@@ -51,7 +50,8 @@ Diese Multi-Cloud-Struktur ermöglicht es der Organisation, die besten Ressource
 
 
 ##### Test
-![img](..\images\kn02-test2.png)
+
+<img src="../images/kn02-test2.png" alt="img" style="max-width:70%">
 
 
 ### AWS Console
@@ -89,7 +89,7 @@ Die AWS-Konsole bietet eine benutzerfreundliche Möglichkeit, auf die leistungss
 
 - VPC: Virtuelles privates Netzwerk in AWS.
 
-![img](../images/test3-kn02.png)
+<img src="../images/test3-kn02.png" alt="img" style="max-width:70%">
 ### Lab 4.1 - EC2
 
 #### launch instance
