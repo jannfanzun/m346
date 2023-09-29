@@ -11,13 +11,13 @@ ssh_pwauth: false
 disable_root: false
 package_update: true  
 packages:
+  - apache2
   - curl 
   - wget 
   - php 
   - libapache2-mod-php 
   - php-mysqli
   - adminer
-  - apache2
 write_files:
   - content: |
       <?php phpinfo(); ?>
@@ -25,7 +25,7 @@ write_files:
     permissions: '0644'
   - content: |
       <?php
-        $servername = "172.31.28.189";
+        $servername = "172.31.86.241";
         $username = "admin";
         $password = "password";
         $dbname = "mysql";
