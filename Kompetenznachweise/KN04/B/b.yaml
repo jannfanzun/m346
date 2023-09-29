@@ -1,0 +1,41 @@
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users,sudo
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYTl7IgV5vhhaFnDFZ16ovOdyILrnAueI8cCmStwhYvC0Qj6ttdCusrxhYlehaNiLyo+ai/Aitk8nLiPse/ue5OQNF2GewRbken2bjnHv0Exs7901elORBKvK7yOpaeJUpdwUQIM+tm9bM4x9WJ9G6e0WritfiB9RDNV0G19/34X7CeJzbb3/nFag/BIU8uUcE1hAijzlmARp9KsMRolkRMuhk1ioQXtMFXWymEW3g7jGJrxXzwhnNn6B1ygsQHQqDtbTlZZ7e2bQiHuwcABgY2gKejhqZDVrC59tUg2qkgSBB1wvJaGROK1rh8XIAaTw5TptsQgF3jAuXGHz1u+CP aws-key
+disable_root: true
+package_update: true
+packages:
+  - apache2
+  - php
+  - libapache2-mod-php
+  - mysql-server
+  - php-mysql
+write_files:
+  - content: |
+      <?php phpinfo(); ?>
+    path: /var/www/html/info.php
+    permissions: '0644'
+  - content: |
+      <?php
+      $ihrname = "Fanzun";
+      ?>
+      <html>
+      <head>
+      <title><?php echo $ihrname; ?></title>
+      </head>
+      <body>
+      <h1>Meine Projekte</h1>
+      <br />
+      <img src="https://a-kn04.s3.amazonaws.com/devices.png" alt="Bild aus S3-Bucket">
+      </body>
+      </html>
+    path: /var/www/html/yourfile.php # alles wir in das php file geschrieben
+    permissions: '0644'
+runcmd:
+  - sudo systemctl enable apache2
+  - sudo systemctl start apache2
