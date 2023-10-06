@@ -25,7 +25,8 @@ dns: ec2-3-95-184-43.compute-1.amazonaws.com
 vol-05651eb7c9a3efd8a
 
 ## attach Volume
-- wichtig, nach Erstellen des Volume einmal reload, damit man volume attachen kann -> das volume soll die Instanz sein.
+- wichtig, nach Erstellen des Volume einmal reload, damit man volume attachen kann -> das volume soll die Instanz sein. 
+- ebenfalls soll das Volume in der gleichen AZ sein.
 ![Alt text](image-5.png)
 
 ## Auf der Instanz das Volume nachschauen
