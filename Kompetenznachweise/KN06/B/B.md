@@ -1,4 +1,13 @@
 ## EC2 Instanz
+- Amazon Linux
+- t2.micro
+- KeyPair: vockey
+**Network Settings**
+- Availibility Zone: us-east-1a
+- Add Security Group Rule
+  - Type : HTTP
+  - Source type : Anywhere
+
 
 ![Alt text](image.png)
 
@@ -17,7 +26,7 @@ Configures the web server to automatically start on boot
 Starts the web server
 Creates a simple webpage 
 
-## Access EC2 Instance Website
+### Access EC2 Instance Website
 
 Server: 3.231.164.35 
 ![Alt text](image-1.png)
@@ -47,13 +56,26 @@ echo '<html><h1>Hello World! This is server 2.</h1></html>' > /var/www/html/inde
 
 ![Alt text](image-2.png)
 
-## Target Group
+## Load Balancer
+**Mappings**
+- us-east-1a
+- us-east-1b
+
+**Security**
+- Web Server Security Group
+
+**target Group**
+- in Health Check
+  - /index.html
+
+**register Target**
+- select Web Server 1 & 2
+- select include as pending below
 
 ![Alt text](image-3.png)
 
 ![Alt text](image-4.png)
 
-## DNS Target Group
+## DNS Target Group Test
 
-myloadbalancer-995344052.us-east-1.elb.amazonaws.com
-
+![Alt text](chrome_IcJelRg42y.gif)
