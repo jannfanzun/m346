@@ -43,6 +43,7 @@ sed "s/AZID/$EC2AZ/" /var/www/html/index.txt > /var/www/html/index.html
   ![Alt text](image-3.png)
 
 **Schlussendlich bei den Public Subnets noch "Public IP-v4" freischalten**
+![Alt text](image-5.png)
 
 ### Instanzen öffnen
 - Funktioniert bei mir nicht -> den Grund kenne ich nicht :/
